@@ -1,4 +1,3 @@
-baseurl: "/"
+baseurl: /
 homeurl: /jekyll_demo
-blogurl: blog.sserhuangdong.com/
 markdown: kramdown
