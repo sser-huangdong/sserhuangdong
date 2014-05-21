@@ -12,4 +12,13 @@ title: 我的Blog
     {% endfor %}
 </ul>
 
+<p>------------------</p>
+
+<ul>
+    {% for post in site.posts %}
+    <li>{{ post.date | date_to_string }} <a href="{{ site.homeurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+
+
 <p>end</p>
