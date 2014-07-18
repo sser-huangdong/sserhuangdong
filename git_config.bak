@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "github"]
+	url = git@github.com:sser-huangdong/sserhuangdong.git
+	fetch = +refs/heads/*:refs/remotes/github/*
+[branch "gh-pages"]
+[alias]
+    publish = !sh -c \"git push github gh-pages && git push -f gitcafe gh-pages:gitcafe-pages\"
+[remote "gitcafe"]
+	url = git@gitcafe.com:sserhuangdong/sserhuangdong.git
+	fetch = +refs/heads/*:refs/remotes/gitcafe/*
