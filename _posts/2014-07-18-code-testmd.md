@@ -6,3 +6,18 @@ category:
 tags: []
 ---
 {% include JB/setup %}
+
+~~~ python
+def check():
+	if 1 == True:
+		print "True"
+~~~
+{% highlight java %}
+public class HelloWorld {
+    public static void main(String args[]) {
+      System.out.println("Hello World!");
+    }
+}
+{% endhighlight %}
+
+check whether hightlight work or not?

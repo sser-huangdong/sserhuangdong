@@ -130,3 +130,4 @@ JB :
 
 # the rest of mine
 markdown: kramdown
+pygments: true
