@@ -4,6 +4,8 @@ title: Hello World!
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
+![首页](/temp_assets/home.jpg)
+![test](/temp_assets/10902301.jpg)  
 
 Here's a sample "posts list".
 
