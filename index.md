@@ -4,8 +4,8 @@ title: 黄东DE主页
 tagline: Do Whatever You Want
 ---
 {% include JB/setup %}
-{% assign PicPath = '/temp_assets' %}
-![首页]({{ PicPath }}/home.jpg)  
+{% assign PicPath = 'http://blog-sserhuangdong.qiniudn.com' %}
+![首页]({{ PicPath }}/bloghome.jpg)  
 
 #`不好意思！`
     
