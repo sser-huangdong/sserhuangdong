@@ -354,6 +354,12 @@ pre {
 	box-shadow: 1px 1px 6px #ccc;
 	-webkit-box-shadow: 1px 1px 6px #ccc;
 	-moz-box-shadow: 1px 1px 6px #ccc;
+	/* word wrap */
+	white-space:pre-wrap;
+	white-space:-moz-pre-wrap;
+	white-space:-pre-wrap;
+	white-space:-o-pre-wrap;
+	word-wrap:break-word;
 }
 pre:hover {
 	border-right: none;

@@ -1,7 +1,7 @@
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
-
+encoding: utf-8
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
@@ -11,7 +11,7 @@ highlighter: pygments
 title : 黄东de博客
 tagline: Site Tagline
 author :
-  name : 黄东 Dominick HUANG
+  name :  Dominick
   email : huangd29@gmail.com
   github : sser-huangdong
   twitter : NOT FOUND

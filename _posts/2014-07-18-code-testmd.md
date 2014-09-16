@@ -7,11 +7,39 @@ tags: []
 ---
 {% include JB/setup %}
 
+	这篇只是用来测试而已，大致是为了检测代码高亮的写法。我用的是kramdowm和pygments。
+
+kramdown语法上的代码段写法：
+	
+	~~~ python
+	def check():
+		if 1 == True:
+			print "True"
+	~~~
+
+效果：  
+
 ~~~ python
 def check():
 	if 1 == True:
 		print "True"
 ~~~
+
+使用pygments的高亮代码写法：
+
+~~~
+{//% highlight java %}
+public class HelloWorld {
+    public static void main(String args[]) {
+      System.out.println("Hello World!");
+    }
+}
+{//% endhighlight %}
+移除//
+~~~
+
+效果：
+
 {% highlight java %}
 public class HelloWorld {
     public static void main(String args[]) {
@@ -19,5 +47,3 @@ public class HelloWorld {
     }
 }
 {% endhighlight %}
-sdf  
-check whether hightlight work or not?
