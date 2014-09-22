@@ -4,11 +4,10 @@ title: 简洁高效的Python写法
 description: ""
 category: 
 tags: ['Python', 'code']
-comments: false
 ---
 {% include JB/setup %}
 
-	学完C/C++之后，接触Python，甚至用来刷leetcode，但是有时候感觉我的写法不是很Pythonic，比较繁琐。所以一直寻思着整理一份参考。未完待续。。。
+    学完C/C++之后，接触Python，甚至用来刷leetcode，但是有时候感觉我的写法不是很Pythonic，比较繁琐。所以一直寻思着整理一份参考。未完待续。。。
 
 {% highlight python %}
 
@@ -50,29 +49,29 @@ x = max(y, z)  # 这是一种更简洁的写法
 
 增减1
 ----
-	在C里面可以用++和--来增减1，但是在Python里面只能用+=1和-=1了
+    在C里面可以用++和--来增减1，但是在Python里面只能用+=1和-=1了
 
 
 else和循环(while/for)
 --------------------
-	Python的一个语法糖是循环可以和else结合，只要跳出循环没有执行break就会调用。
+    Python的一个语法糖是循环可以和else结合，只要跳出循环没有执行break就会调用。
 
 {% highlight python %}
 a = [12, 24, 35, 43, 65]
 b = 40
 for i in a:
-	if i > b:
-		print 'There is some item in a bigger than %d' % b
-		break
+    if i > b:
+        print 'There is some item in a bigger than %d' % b
+        break
 else:
-	print "Every item in a not bigger than %d" % b
+    print "Every item in a not bigger than %d" % b
 {% endhighlight %}
 
 with
 ----
 {% highlight python %}
 with open('test.txt', 'r') as fin:
-	fin.read()
+    fin.read()
 {% endhighlight %}
 
 
@@ -87,18 +86,18 @@ with open('test.txt', 'r') as fin:
 a = [1, 23, 34, 56, 67]
 # 获取数组内容与相应下标：
 for index, item in enumerate(a):
-	print index, item
+    print index, item
 
 # 而不是
 index = 0
 for item in a:
-	print index, item
-	index += 1
+    print index, item
+    index += 1
 
 # 更不是
 for item in a:
-	index = a.index(item)
-	print index, item
+    index = a.index(item)
+    print index, item
 {% endhighlight %}
 
 
@@ -108,16 +107,16 @@ for item in a:
 alist = [1, 2, 3, 4, 5]
 blist = [2, 3, 4, 5, 6]
 for a, b in zip(alist, blist):
-	print a, b
+    print a, b
 
 # 也可以写，只是效率差点
 for index in xrange(len(alist)):
-	print alist[index], blist[index]
+    print alist[index], blist[index]
 {% endhighlight %}
 
 map函数
 -------
-	如果需要对链表里面每个元素都做同样的操作，除了for还有map
+    如果需要对链表里面每个元素都做同样的操作，除了for还有map
 {% highlight python %}
 sin = "1 2 3 4"
 ints = map(int, sin.split())  # split() 是字符串的分割函数
@@ -154,7 +153,7 @@ d.get('a', 'default')  # 找不到，
 
 字符串trim()
 -----------
-	Python的字符串没有trim()方法，就是去除左右两边的字符。可以使用strip()方法来代替。
+    Python的字符串没有trim()方法，就是去除左右两边的字符。可以使用strip()方法来代替。
 
 {% highlight python %}
 s = "   sss  "
@@ -179,7 +178,7 @@ l = ['aaa', 'bbb', 'ccc']
 
 正则匹配全部字符
 -------------
-	正则点号.匹配的是除了\n之外的所有字符，而不是所有字符！所以用\W\w来匹配所有字符吧
+    正则点号.匹配的是除了\n之外的所有字符，而不是所有字符！所以用\W\w来匹配所有字符吧
 
 可变的默认参数
 -----------

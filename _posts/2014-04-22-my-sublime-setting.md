@@ -4,7 +4,7 @@ title: 我的sublime配置
 description: ""
 category:
 tags: ["工具"]
-comments: false
+comments: true
 ---
 {% include JB/setup %}
 
@@ -77,6 +77,15 @@ DocBlockr可以自动生成PHPDoc风格的注释。它支持的语言有Javascri
 12. DashDoc  
 Mac下与Dash软件配合使用，选中某个系统函数然后用快捷键`ctrl+h`进行查询
 
+Python插件
+---------
+1. sublimePythonIDE 好用!
+不仅有补全，而且还会做代码风格检查，强迫症养成！
+补全可能是异步处理的，越用越好用。
+
+2. sublimeREPL 
+可以在sublime里面运行ipython，不过似乎没有解决中文问题。
+
 前端开发插件
 ---------
 1. **Emmet(Zen Coding)**  
@@ -126,6 +135,7 @@ markdown教程：[Markdown 语法说明 (简体中文版)](http://wowubuntu.com/
 --------
 1. **SideBar Enhancements**  
 这个插件改进了侧边栏，增加了许多功能。  
+考察结果：好用，把文件夹直接拖到ST就是一个项目了
 
 2. **Xdebug**  
 可以安装xdebug插件，做代码调试功能。 这是大型IDE都有的功能， 小型编辑器很少能做到，但是sublime却又相应的插件能实现xdebug的功能。
